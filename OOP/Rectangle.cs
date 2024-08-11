@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TodoList;
 
 namespace OOP
 {
     public class Rectangle
     {
+        StaticCalculator.Add(1,2);
 
             //const fields are implicitly static
             public const int NumberOfSides = 4;

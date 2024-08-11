@@ -10,3 +10,6 @@ var rectangle1 = new Rectangle(5,10);
 var rectangle2 = new Rectangle(50,100);
 Console.WriteLine(
     "Count of Rectangle objects is " + Rectangle.CountOfInstances);
+Console.WriteLine(StaticCalculator.Add(2, 3)); 
+Console.WriteLine(StaticCalculator.Add(2, 4)); 
+StaticCalculator.Add(2, 5);
