@@ -53,6 +53,47 @@ Function function = new Function();
 // C# is statically typed prgaramming language .
 //var word = "abc";
 //word = 10; errore static type
+//_________________________________________________________________
+//CONTINUE KEY WORD
+// itaration
+//for (int i = 0; i < 20; ++i)
+//{
+//    if (i % 3 == 0 )
+//    {
+//        continue;
+        // continue keyword stopped the execution of the current iteration of the loop
+    //}
+//    Console.WriteLine("i is " + i);
+//}
+// another senorio
+//int userNumber;
+//do
+//{
+//    Console.WriteLine("Enter a number larger than 10:");
+//    var userInput = Console.ReadLine();
+//    if (userInput == "stop")
+//    {
+//        break;
+//    }
+//    bool isParsableToInt = userInput.All(char.IsDigit);
+//    if (!isParsableToInt)
+//    {
+//        userNumber = 0;
+//        continue;
+//    }
+//    userNumber = int.Parse(userInput);
+//} while (userNumber <= 10);
+//Console.WriteLine("The loop is finished");
+//_______________________________________________________________________
+
+
+
+
+
+
+
+
+
 
 
 

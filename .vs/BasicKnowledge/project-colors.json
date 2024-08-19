@@ -15,7 +15,12 @@
       "ProjectGuid": "151d6603-f12f-44ee-9591-51b7ffde2b56",
       "DisplayName": "BasicKnowledge",
       "ColorIndex": 1
+    },
+    "2a108e1a-3337-46eb-834c-caad52e92950": {
+      "ProjectGuid": "2a108e1a-3337-46eb-834c-caad52e92950",
+      "DisplayName": "TodoList",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
