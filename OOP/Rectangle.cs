@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 using TodoList;
 
@@ -9,6 +11,14 @@ namespace OOP
 {
     public class Rectangle
     {
+        // Some notes for data hiding ****
+        public void DataHiding() // this method is just for using the note of data hiding
+        {
+            List<int> numbers = new List<int> { 1, 3, 4 };
+            int count = numbers.Count; //public for getting
+            //numbers.Count = 6; private for setting
+            
+        }
         // StaticCalculator.Add(1,2);
         public int PublicThing;
         private int _privatThing;
@@ -25,6 +35,7 @@ namespace OOP
 
         //a static constructor
         static Rectangle()
+
         {
             _firstUsed = DateTime.Now;
         }
