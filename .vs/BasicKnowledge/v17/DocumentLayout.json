@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5033296D-5341-40D0-95AC-34B494F55BAB}|OOP\\OOP.csproj|c:\\mohammad\\asp.net ef core (mvc)-practice\\basicknowledge\\oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5033296D-5341-40D0-95AC-34B494F55BAB}|OOP\\OOP.csproj|solutionrelative:oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5033296D-5341-40D0-95AC-34B494F55BAB}|OOP\\OOP.csproj|c:\\mohammad\\asp.net ef core (mvc)-practice\\basicknowledge\\oop\\staticcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5033296D-5341-40D0-95AC-34B494F55BAB}|OOP\\OOP.csproj|solutionrelative:oop\\staticcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,13 +34,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StaticCalculator.cs",
+              "DocumentMoniker": "C:\\Mohammad\\asp.net ef core (mvc)-practice\\BasicKnowledge\\OOP\\StaticCalculator.cs",
+              "RelativeDocumentMoniker": "OOP\\StaticCalculator.cs",
+              "ToolTip": "C:\\Mohammad\\asp.net ef core (mvc)-practice\\BasicKnowledge\\OOP\\StaticCalculator.cs",
+              "RelativeToolTip": "OOP\\StaticCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T15:33:29.493Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Rectangle.cs",
               "DocumentMoniker": "C:\\Mohammad\\asp.net ef core (mvc)-practice\\BasicKnowledge\\OOP\\Rectangle.cs",
               "RelativeDocumentMoniker": "OOP\\Rectangle.cs",
               "ToolTip": "C:\\Mohammad\\asp.net ef core (mvc)-practice\\BasicKnowledge\\OOP\\Rectangle.cs",
               "RelativeToolTip": "OOP\\Rectangle.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAiwEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwDgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T17:52:27.767Z",
               "EditorCaption": ""
@@ -51,7 +67,8 @@
               "RelativeToolTip": "OOP\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T17:50:38.058Z"
+              "WhenOpened": "2024-09-28T17:50:38.058Z",
+              "EditorCaption": ""
             }
           ]
         }

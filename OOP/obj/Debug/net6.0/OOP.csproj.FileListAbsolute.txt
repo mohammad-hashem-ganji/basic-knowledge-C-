@@ -2,9 +2,7 @@ C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\bin\Debug\net6.0\O
 C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\bin\Debug\net6.0\OOP.deps.json
 C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\bin\Debug\net6.0\OOP.runtimeconfig.json
 C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\bin\Debug\net6.0\OOP.dll
-C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\bin\Debug\net6.0\ref\OOP.dll
 C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\bin\Debug\net6.0\OOP.pdb
-C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\obj\Debug\net6.0\OOP.csproj.AssemblyReference.cache
 C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\obj\Debug\net6.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
 C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\obj\Debug\net6.0\OOP.AssemblyInfoInputs.cache
 C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\obj\Debug\net6.0\OOP.AssemblyInfo.cs
@@ -13,3 +11,5 @@ C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\obj\Debug\net6.0\O
 C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\obj\Debug\net6.0\ref\OOP.dll
 C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\obj\Debug\net6.0\OOP.pdb
 C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\obj\Debug\net6.0\OOP.genruntimeconfig.cache
+C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\obj\Debug\net6.0\OOP.sourcelink.json
+C:\Mohammad\asp.net ef core (mvc)-practice\BasicKnowledge\OOP\obj\Debug\net6.0\refint\OOP.dll

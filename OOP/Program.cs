@@ -67,7 +67,7 @@ class MedicalAppointment
         //_patientName = patientName;
         //_date = date;
     }
-    public MedicalAppointment(string patientName, int daysFromNow)
+    public MedicalAppointment(string patientName, int daysFromNow = 7)
     {
         _patientName = patientName;
         _date = DateTime.Now.AddDays(daysFromNow);
