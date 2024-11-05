@@ -16,6 +16,7 @@ namespace OOP
         // consts must bee assigned compile-time constant value
         readonly int NumberOfSidesReadonly = 4;
         // readonly fields can also be assigned in the constructor
+        // making it useful for defining constants or values that should not change after an object is created.
         public readonly int Width;
         public readonly int Height;
         // what if I want to make it possible to assign these to fields again, at least inside the Rectangle class?
