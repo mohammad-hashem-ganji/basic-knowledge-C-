@@ -26,5 +26,6 @@ namespace TodoList
         //The static keyword should be applied to all members of static classes.
         //----------------------------------------------------------------
         //if aprivate method doesn't use instance data , make it static
+        //I didn't undrestnd the usage of private static .
     }
 }

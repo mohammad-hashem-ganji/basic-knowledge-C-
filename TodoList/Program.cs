@@ -182,11 +182,13 @@ bool TryReadIndex(out int index)
         index >= 1 &&
         index <= todos.Count)
     {
+        
         return true;
     }
     //else
     //{
     Console.WriteLine("   Invalid index!");
+    index = 0;
     return false;
     //}
 }
