@@ -15,27 +15,62 @@ namespace OOP
         // consts must bee assigned a value at declaration;
         // consts must bee assigned compile-time constant value
         readonly int NumberOfSidesReadonly = 4;
-        // readonly fields can also be assigned in the constructor
+        // readonly fields can also be assigned in the constructor or at the declaration.
         // making it useful for defining constants or values that should not change after an object is created.
-        public readonly int Width;
-        public readonly int Height;
+        // # this is declaration phase #
+        //public readonly int Width;
+        //private int _height;
         // what if I want to make it possible to assign these to fields again, at least inside the Rectangle class?
         // I want to some Way to make those fields public for reading , but private for writing.( khodet test kon readonly biron az class chejori
         // mishe.
         // another way insted of readonly. => 108
-        public Rectangle(int width, int height)
-        {
-            Width = GetLengthOrDefault(width, nameof(Width));
-            Height = GetLengthOrDefault(height, nameof(Height));
-        }
+        //public Rectangle(int width, int height)
+        //{
+        //    Width = GetLengthOrDefault(width, nameof(Width));
+        //    _height = GetLengthOrDefault(height, nameof(_height));
+        //}
 
+        //public int GetHeight() => _height;
+
+        //public void SetHeight(int value)
+        //{
+        //    if (value >0)
+        //    {
+        //        _height = value;
+        //    }
+        //}
+        //private int _width; // it is a backing field
+        //// the property doesn't do anything more than getting or setting the value of backing field
+        //public int Width
+        //{
+        //    // get and set are accessors (check the spell!)
+        //    get
+        //    {
+        //        return _width;
+        //    }
+        //    private set
+        //    {// I can set Width just in the current class.
+        //        if (value > 0)
+        //        {
+        //            _width = value;
+
+        //        }
+        //    }
+        //    // the role of getter and setter is the same as GetHeight and SetHeight .
+        //}
+        
+        public int Width { get; private set; } // the compiler translate this line to the code that I wrote above .
+        // also generating the backing field.
+        // scince the backing field is generated behind the scense and not declarated explicitly so I can't use the backing 
+        // field here anymore.
+        private int _height;
         private int GetLengthOrDefault(int length, string name)
         {
-            const  int defaultValueIfNonPositive = 1;
+            const int DefaultValueIfNonPositive = 1;
             if (length <= 0)
             {
                 Console.WriteLine($"{name} must be positive number.");
-                return defaultValueIfNonPositive;
+                return DefaultValueIfNonPositive;
             }
             return length;
         }
@@ -55,14 +90,14 @@ namespace OOP
         public int PublicThing;
         private int _privatThing;
         //const fields are implicitly static
-        
+
 
         //a static property, belonging to the class as a whole
         // static fields and properties are used when we need to share a single member between all
         //class instances .
 
-        public int CalculateCircumference() => 2 * Width + 2 * Height;
-        public int CalculateArea() => Width * Height;
+        //public int CalculateCircumference() => 2 * Width + 2 * _height;
+        //public int CalculateArea() => Width * _height;
 
 
 
