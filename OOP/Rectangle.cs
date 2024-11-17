@@ -15,6 +15,8 @@ namespace OOP
         // consts must bee assigned a value at declaration;
         // consts must bee assigned compile-time constant value
         readonly int NumberOfSidesReadonly = 4;
+        public static int NumberOfInstances { get; private set; }
+        private static DateTime _firstUsed;
         // readonly fields can also be assigned in the constructor or at the declaration.
         // making it useful for defining constants or values that should not change after an object is created.
         // # this is declaration phase #
@@ -28,6 +30,7 @@ namespace OOP
         //{
         //    Width = GetLengthOrDefault(width, nameof(Width));
         //    _height = GetLengthOrDefault(height, nameof(_height));
+        //    ++NumberOfInstances ;
         //}
 
         //public int GetHeight() => _height;
@@ -58,7 +61,6 @@ namespace OOP
         //    }
         //    // the role of getter and setter is the same as GetHeight and SetHeight .
         //}
-        
         public int Width { get; private set; } // the compiler translate this line to the code that I wrote above .
         // also generating the backing field.
         // scince the backing field is generated behind the scense and not declarated explicitly so I can't use the backing 
@@ -98,8 +100,24 @@ namespace OOP
 
         //public int CalculateCircumference() => 2 * Width + 2 * _height;
         //public int CalculateArea() => Width * _height;
-
-
+        public string Description => $"A rectangle with width {Width}" +
+            $"and height{_height}";
+        public string LongDescription
+        {
+            get
+            {
+                var result = "";
+                for (int i = 0; i < 1000; ++i)
+                {
+                    result += i;
+                }
+                return result;
+            }// **** Role => Properties should be performanced-heavy
+            // in run time if have an error it is difficault to handle it . this property is complex and slow
+        }
+        public static string DescribeGenerally() =>
+            $"this is a rectangle .";
+        public const int NumberOfFields = 4; // all const fields are implicitly static .
 
 
     }

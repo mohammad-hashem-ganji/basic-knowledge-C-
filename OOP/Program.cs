@@ -15,8 +15,10 @@ using TodoList;
 //StaticCalculator.Add(2, 5);
 //-----------------------------------------------------------------------------------
 var medicalAppointment = new MedicalAppointment(
-    "John smith" ,new DateTime(2023, 4, 3));
+    "John smith", new DateTime(2023, 4, 3));
 medicalAppointment.Reschedule(new DateTime(2023, 4, 4));
+
+
 
 /* Issues caused by procedural programming 
 -spaghetti code
@@ -37,6 +39,24 @@ medicalAppointment.Reschedule(new DateTime(2023, 4, 4));
  * Abstracion
  * inheritance
  */
+Person person = new Person("Mohammadhashem")
+{
+    // The constroctor call first then the object initializer execute and overrides the value of the Name Property.
+    Name = "Ali",
+    YearOfBirth = 2000,
+    //Address I can't set address because the property has no setter.
+    //City I can't set City because the property's setter is private.
+    //Object initialization only works if the properties have public setter.=> this is a problem!
+    //I learned already that having the data of the class publicly settable is not good idea.
+    State = "Fars" // I can set :)
+};
+//person.State = "Tehran"  -> I can't sett it after object created
+//__________________________________
+Rectangle rectangle = new Rectangle();
+Console.WriteLine(rectangle.Description);// fast -> it can be property
+Console.WriteLine(rectangle.LongDescription);// slow -> should be method . because it's complex 
+//Console.WriteLine($"Nubmber of sides is {rectangle.NumberOfFields}"); it doesn't work because NumberOfFields  is const
+Console.WriteLine($"Number of fields is {Rectangle.NumberOfFields}");  // I should work with const fields like static methods.
 Console.ReadKey();
 class medicalAppointmentPrinter
 {
@@ -47,9 +67,6 @@ class medicalAppointmentPrinter
     }
 }
 
-
-
-
 class MedicalAppointment
 {
     private string _patientName;
@@ -57,11 +74,11 @@ class MedicalAppointment
     // overloading constructor.
     public MedicalAppointment(string patientName, DateTime date) :
         this(patientName, 7) // this keyword refers to another constructor from this class.
-        // the compiler knows we mean public MedicalAppointment(string patientName, int daysFromNow) ,
-        //because this is the one with the parameters matching the values I passed here.
-        // so when this constructor is called , it first executes the code from this =>
-        //public MedicalAppointment(string patientName, int daysFromNow) (constructor)
-        // then the code from this constructor would be called. it avoid code duplication.
+                             // the compiler knows we mean public MedicalAppointment(string patientName, int daysFromNow) ,
+                             //because this is the one with the parameters matching the values I passed here.
+                             // so when this constructor is called , it first executes the code from this =>
+                             //public MedicalAppointment(string patientName, int daysFromNow) (constructor)
+                             // then the code from this constructor would be called. it avoid code duplication.
     {
         // داخل این کد تکرار کد وجود دارد. 
         //_patientName = patientName;
@@ -103,7 +120,18 @@ class MedicalAppointment
     //}
 }
 
-
+class Person
+{
+    public string Name { get; set; }
+    public int YearOfBirth { get; set; }
+    public string Address { get; }
+    public string City { get; private set; }
+    public string State { get; init; } // I can assign a value to the property only during object constroction.
+    public Person(string name)
+    {
+        Name = name;
+    }
+}
 
 
 
