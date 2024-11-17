@@ -20,7 +20,7 @@ namespace OOP
         // readonly fields can also be assigned in the constructor or at the declaration.
         // making it useful for defining constants or values that should not change after an object is created.
         // # this is declaration phase #
-        //public readonly int Width;
+        //public readonly int Width;  
         //private int _height;
         // what if I want to make it possible to assign these to fields again, at least inside the Rectangle class?
         // I want to some Way to make those fields public for reading , but private for writing.( khodet test kon readonly biron az class chejori
@@ -32,6 +32,8 @@ namespace OOP
         //    _height = GetLengthOrDefault(height, nameof(_height));
         //    ++NumberOfInstances ;
         //}
+
+
 
         //public int GetHeight() => _height;
 
